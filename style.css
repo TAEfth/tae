@@ -3,7 +3,6 @@ body {
     height: 97vh;
     display: flex;
     flex-direction: column;   /* ένα κάτω από το άλλο */
-    justify-content: center;  /* κάθετο κεντράρισμα */
     align-items: center;      /* οριζόντιο κεντράρισμα */
 
  }
@@ -14,9 +13,13 @@ body {
      margin: 0 auto;                 /* κεντράρισμα οριζόντια */
      padding: 0 15px;
      box-sizing: border-box;
+     font-size: 0.9em;              /* μικραίνουμε όλα τα fonts και relative στοιχεία */
+}
 
-     transform: scale(0.8);         /* μικραίνει όλα στο 80% */
-     transform-origin: center;  /* προσανατολισμός μικραίνει από πάνω στο κέντρο */
+#wrapper div {
+  padding: 5px;                     /* μικρότερο padding */
+  margin: 5px 0;                    /* μικρότερα κενά */
+  box-sizing: border-box;
 }
 
 p{
