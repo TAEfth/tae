@@ -1,19 +1,25 @@
 body {
     margin: 0;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;   /* ένα κάτω από το άλλο */
-    align-items: center;      /* οριζόντιο κεντράρισμα */
-
  }
 
  #wrapper {
-     width: 100%;                    /* καταλαμβάνει όλο το πλάτος του body */
-     max-width: 780px;               /* ρύθμισε εδώ το μέγιστο πλάτος που θες */
-     margin: 0 auto;                 /* κεντράρισμα οριζόντια */
+     width: 100%;
+     max-width: 780px;
      padding: 0 15px;
      box-sizing: border-box;
-     font-size: 0.9em;              /* μικραίνουμε όλα τα fonts και relative στοιχεία */
+     font-size: 0.9em;
+
+     /* CENTERING */
+     min-height: 100vh;
+     height: auto;
+     margin: 0 auto;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center; /* κάθετα */
+     align-items: center;     /* οριζόντια */
+
 }
 
 #wrapper div {
@@ -24,7 +30,7 @@ body {
 }
 
 *, *::before, *::after {
-    box-sizing: border-box; /* για να μην μεγαλώνουν τα divs με padding */
+    box-sizing: border-box; 
 }
 
 p{
@@ -33,7 +39,7 @@ p{
 }
 
 .skill-btn{
-     font-size: 16px;
+     font-size: 18px;
      color: #FFE08A;
      font-family: 'Roboto Condensed', sans-serif;
      text-decoration: none;
@@ -45,8 +51,8 @@ p{
 }
 
 .logo{
-     height: 30px;
-     width: 30px;
+     height: 32px;
+     width: 32px;
      object-fit: contain;
      opacity: 0.75;           /* ελαφρώς διαφανή */
      transition: all 0.25s ease;  
@@ -54,7 +60,7 @@ p{
 }
 
 .bottom-btn{
-    font-size: 21px;
+    font-size: 22px;
     color: whitesmoke;
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
@@ -81,31 +87,31 @@ p{
 #logos,
 #bottom{
     text-align: center;
-    margin: 5px 0;
+    margin: 7px 0;
     width: 100%;
 }
 
 #title {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 8px; 
+    margin-top: 18px;
+    margin-bottom: 10px; 
 }
 
 .info{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400; 
-    margin: 8px 0;   
+    margin: 10px 0;   
 }
 
 #skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 16px;      
+    font-size: 18px;      
     font-weight: 400; 
     line-height: 1.5;     
-    margin: 4px 0;        
+    margin: 5px 0;        
 }
 
 #links{
@@ -117,13 +123,13 @@ p{
 #logos{
      display: flex;
      justify-content: center;
-     gap: 13px;                     /* απόσταση μεταξύ logos */
-     margin-top: 12px;
+     gap: 15px;                         /* απόσταση μεταξύ logos */
+     margin-top: 15px;
 }
 
 #profile-pic {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     max-width: 80%;  
@@ -135,8 +141,8 @@ p{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;             /* για να κατέβουν σε νέα γραμμή αν χρειαστεί */
-    gap: 30px;
-    font-size: 24px;
+    gap: 35px;
+    font-size: 28px;
 }
 
 .links-top,
@@ -149,18 +155,18 @@ p{
 }
 
 .links-bottom{
-    margin-top: 26px;
+    margin-top: 27px;
 }
 
 .links-title {
-    font-size: 32px;
+    font-size: 33px;
     font-weight: 400;
-    margin-top: 15px;
+    margin-top: 17px;
     margin-bottom: 8px; 
 }
 
 .links-info{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400; 
     text-align: left;
     margin: 8px 0;
@@ -168,18 +174,18 @@ p{
 }
 
 .links-info-bottom{
-   font-size: 13px;
+   font-size: 14px;
    font-weight: 700; 
    font-style: italic;
    color:#FFE08A;
-   margin: 3px 0;
+   margin: 4px 0;
 }
 
 .links-list{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 16px; 
+    font-size: 17px; 
     color: #FFE08A;     
     font-weight: 400; 
     line-height: 1.5;     
@@ -187,8 +193,8 @@ p{
 }
 
 .sub-title{
-    font-size: 16px;
+    font-size: 17px;
     color:#FFE08A;
     font-weight: 400; 
-    margin: 3px 0;
+    margin: 4px 0;
 }
